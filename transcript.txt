@@ -1,0 +1,137 @@
+Meeting: Velan x Akaash weekly sync
+Date: June 11 2025
+Duration: ~18 mins
+
+---
+
+Velan: yo you there
+
+Akaash: yeah yeah sorry was on another tab, go ahead
+
+Velan: okay so uh. the demo we did yesterday with that fintech guy
+
+Akaash: Rohit?
+
+Velan: yeah him. he wants a follow up call but he said something about needing SOC2 before they even talk pricing
+
+Akaash: ugh okay that was expected honestly. everyone in that space asks that
+
+Velan: right so we need to at least start the SOC2 process da. like even if we don't finish it, showing we started helps
+
+Akaash: yeah okay. who's gonna own that
+
+Velan: I think you should since you're handling the infra side anyway
+
+Akaash: fine. I'll look into Vanta this week, they automate most of it. someone from the YC batch was using it
+
+Velan: okay so put that on you, check Vanta by Friday
+
+Akaash: yeah done
+
+Velan: okay next thing. the pipeline. we have like what, 6 leads right now?
+
+Akaash: 7 if you count that HR tech company Priya introduced us to
+
+Velan: oh right. have we followed up with them
+
+Akaash: no not yet. she sent the intro like 4 days ago
+
+Velan: okay that's on me, I'll send the follow up today itself. can't let that go cold
+
+Akaash: yeah please do that fast. Priya will also feel bad
+
+Velan: yeah yeah. okay so the product side. what's the status on the bulk export thing
+
+Akaash: uh so the backend is done mostly. there's this one edge case where if the dataset is above like 50k rows it just times out
+
+Velan: okay and how long to fix that
+
+Akaash: honestly 2 days if I sit on it properly. but I've been pulled into all the infra stuff so
+
+Velan: okay let's timebox it. can you get it done by Thursday
+
+Akaash: yeah I think so. I'll block tomorrow afternoon for it
+
+Velan: okay bulk export fix by Thursday, that's on you
+
+Akaash: yep
+
+Velan: and then once that's done we can actually show it in demos properly. right now I'm avoiding that whole section
+
+Akaash: haha yeah don't show it, it'll just hang
+
+Velan: exactly. okay what about the YC application. batch is in like 3 weeks
+
+Akaash: oh god. yeah we need to sit on that
+
+Velan: I think the answers are mostly there from last time we applied. we just need to update the metrics and rewrite the why now section
+
+Akaash: our metrics are actually better now. we should highlight the 3 customers paying
+
+Velan: yes exactly. MRR is like what, 2400 now?
+
+Akaash: 2400 yeah. and NRR is good because Santhosh's company expanded last month
+
+Velan: okay so let's get a draft done by next Tuesday. we should both sit together for that, maybe 2 hours
+
+Akaash: yeah let's do it. Tuesday evening?
+
+Velan: works for me. okay put that as a blocker in the calendar
+
+Akaash: will do
+
+Velan: okay one more thing. the landing page. I showed it to my cousin who does design and she said it looks very developer-y
+
+Akaash: haha I mean it was built by a developer so
+
+Velan: yeah exactly. I think we need to clean it up before we start outbound properly. the hero text is also not great
+
+Akaash: what does it say right now
+
+Velan: it says like "AI powered workflow automation for B2B teams" or something. very generic da
+
+Akaash: yeah that could be anything. we should talk to Karan he did the messaging for his startup
+
+Velan: good idea. can you reach out to him? you know him better
+
+Akaash: yeah I'll ping him today
+
+Velan: okay Akaash pings Karan for landing page messaging help, today
+
+Akaash: noted
+
+Velan: and uh. what about the investor update. Anand sir was asking
+
+Akaash: oh yeah we owe him an update. last one was like 6 weeks ago
+
+Velan: yeah we should send one this week. I'll draft it, you just review it before it goes
+
+Akaash: cool. keep it short though, he doesn't like long updates
+
+Velan: yeah 5 bullet points max. wins, metrics, asks, that's it
+
+Akaash: perfect
+
+Velan: okay I think that's mostly it. anything from your side
+
+Akaash: uh. yeah one thing. the API rate limits we set are too low. one of the customers complained their automations are getting throttled
+
+Velan: oh which customer
+
+Akaash: the logistics one, Karthik's team
+
+Velan: okay that needs to get fixed fast, they're one of our good ones
+
+Akaash: yeah I'll bump their limit today itself. and then we should make the limits configurable per customer instead of hardcoded
+
+Velan: yeah make that a proper task, not just a quick fix
+
+Akaash: okay I'll create a proper ticket for that. configurable rate limits, maybe 2 week thing
+
+Velan: sounds good. okay I think we're done. same time next week?
+
+Akaash: yeah works
+
+Velan: cool. alright bye da
+
+Akaash: bye
