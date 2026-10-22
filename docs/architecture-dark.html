@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meeting automation services</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#2d3142;color:#f5f5f5;font-family:Geist,Arial,sans-serif}main{max-width:1120px;margin:auto}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:960px}h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400}p{line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow-x:visible}}</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="architecture-dark-title architecture-dark-desc">
+<title id="architecture-dark-title">Meeting automation services</title>
+<desc id="architecture-dark-desc">A two-request model pass precedes Jira creation and Slack delivery.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bfc0c0"/></marker></defs>
+<rect x="0" y="0" width="960" height="600" fill="#2d3142"/>
+<text x="40" y="48" font-family="Instrument Serif, Georgia, serif" font-size="28" fill="#f5f5f5">Meeting automation services</text>
+<text x="40" y="76" font-family="Geist, Arial, sans-serif" font-size="11" fill="#bfc0c0">A two-request model pass precedes Jira creation and Slack delivery.</text>
+<path d="M 264,208 H 352" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 576,196 H 688" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 688,224 H 576" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 464,248 V 392" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 576,432 H 688" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 800,472 V 512 Q 800,520 792,520 H 160 Q 152,520 152,512 V 472" fill="none" stroke="#bfc0c0" stroke-width="1.6" marker-end="url(#arrow)"/>
+<g data-node="Transcript file"><rect x="40" y="168" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
+<text x="56" y="186" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INPUT</text>
+<text x="56" y="208" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Transcript file</text>
+<text x="56" y="226" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Plain-text meeting notes</text>
+</g>
+<g data-node="Python extraction"><rect x="352" y="168" width="224" height="80" rx="6" fill="#413d44" stroke="#f08a59" stroke-width="1.8"/>
+<text x="368" y="186" fill="#f08a59" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">CORE</text>
+<text x="368" y="208" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Python extraction</text>
+<text x="368" y="226" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Initial request + review</text>
+</g>
+<g data-node="OpenRouter"><rect x="688" y="168" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1" stroke-dasharray="5 4"/>
+<text x="704" y="186" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">EXTERNAL</text>
+<text x="704" y="208" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">OpenRouter</text>
+<text x="704" y="226" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Same configured model</text>
+</g>
+<g data-node="Action items"><rect x="352" y="392" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1"/>
+<text x="368" y="410" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">DATA</text>
+<text x="368" y="432" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Action items</text>
+<text x="368" y="450" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">title / assignee / due / context</text>
+</g>
+<g data-node="Jira tasks"><rect x="688" y="392" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1" stroke-dasharray="5 4"/>
+<text x="704" y="410" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">EXTERNAL</text>
+<text x="704" y="432" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Jira tasks</text>
+<text x="704" y="450" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Summary + description</text>
+</g>
+<g data-node="Slack summary"><rect x="40" y="392" width="224" height="80" rx="6" fill="#2d3142" stroke="#bfc0c0" stroke-width="1.1" stroke-dasharray="5 4"/>
+<text x="56" y="410" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">EXTERNAL</text>
+<text x="56" y="432" fill="#f5f5f5" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Slack summary</text>
+<text x="56" y="450" fill="#bfc0c0" font-family="Geist Mono, Consolas, monospace" font-size="9">Ticket links / names / dates</text>
+</g>
+<line x1="40" y1="548" x2="920" y2="548" stroke="#bfc0c0" stroke-width="0.7"/>
+<text x="40" y="568" font-family="Geist, Arial, sans-serif" font-size="10" fill="#bfc0c0">Jira assignee and due-date fields are not set. The script posts those values as Slack text.</text>
+<text x="40" y="588" font-family="Geist Mono, Consolas, monospace" font-size="8" fill="#bfc0c0">ARROWS: DATA OR DEPENDENCY DIRECTION   /   DASHED BOX: EXTERNAL SERVICE OR MOCK   /   SOURCE: REPOSITORY FILES</text>
+</svg></div></main></body></html>
